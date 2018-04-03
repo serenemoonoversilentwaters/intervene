@@ -13,6 +13,9 @@ class Topic(models.Model):
     
     def get_absolute_url(self):
         return reverse('topics-detail', args=[str(self.id)])
+    
+#    def createTag(self, Tag):
+        #Is this necessary? Research for tomorrow
       
     
 class Tag(models.Model):
@@ -24,6 +27,7 @@ class Tag(models.Model):
     
     def get_absolute_url(self):
         return reverse('tags-detail', args=[str(self.id)])
+    
                        
 
 class Lesson(models.Model):
@@ -36,3 +40,5 @@ class Lesson(models.Model):
     
     def get_absolute_url(self):
         return reverse('lessons-detail', args=[str(self.id)])
+    
+    
