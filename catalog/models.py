@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse #Used to generate URLs by reversing the URL patterns
 
+
 class Topic(models.Model):
     name = models.CharField(max_length=50)
     summary = models.TextField(max_length=1000, help_text='Enter a brief description of the topic')
